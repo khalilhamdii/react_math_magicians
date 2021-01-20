@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live demo](https://khalilhamdii.github.io/zombie_apocalypse/)
+[Live demo](https://react-math-magicians.herokuapp.com/)
 
 ## Built With 🛠
 
