@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import './App.css';
+import '../stylesheets/App.css';
 import PropTypes from 'prop-types';
 import Big from 'big.js';
 import React from 'react';
