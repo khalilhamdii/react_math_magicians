@@ -1,53 +1,45 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable arrow-parens */
 import React from 'react';
 import Button from './Button';
 
-class ButtonPanel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(btnName) {
-    const { onClick } = this.props;
-    return onClick(btnName);
-  }
-
-  render() {
-    return (
+function ButtonPanel(props) {
+  const handleClick = (btnName) => {
+    props.onClick(btnName);
+  };
+  return (
+    <div>
       <div>
-        <div>
-          <Button name="AC" onClick={this.handleClick} />
-          <Button name="+/-" onClick={this.handleClick} />
-          <Button name="%" onClick={this.handleClick} />
-          <Button name="÷" onClick={this.handleClick} />
-        </div>
-        <div>
-          <Button name="7" onClick={this.handleClick} />
-          <Button name="8" onClick={this.handleClick} />
-          <Button name="9" onClick={this.handleClick} />
-          <Button name="x" onClick={this.handleClick} />
-        </div>
-        <div>
-          <Button name="4" onClick={this.handleClick} />
-          <Button name="5" onClick={this.handleClick} />
-          <Button name="6" onClick={this.handleClick} />
-          <Button name="-" onClick={this.handleClick} />
-        </div>
-        <div>
-          <Button name="1" onClick={this.handleClick} />
-          <Button name="2" onClick={this.handleClick} />
-          <Button name="3" onClick={this.handleClick} />
-          <Button name="+" onClick={this.handleClick} />
-        </div>
-        <div>
-          <Button name="0" onClick={this.handleClick} />
-          <Button name="." onClick={this.handleClick} />
-          <Button name="=" onClick={this.handleClick} />
-        </div>
+        <Button name="AC" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="+/-" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="%" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="÷" onClick={(btnName) => handleClick(btnName)} />
       </div>
-    );
-  }
+      <div>
+        <Button name="7" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="8" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="9" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="x" onClick={(btnName) => handleClick(btnName)} />
+      </div>
+      <div>
+        <Button name="4" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="5" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="6" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="-" onClick={(btnName) => handleClick(btnName)} />
+      </div>
+      <div>
+        <Button name="1" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="2" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="3" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="+" onClick={(btnName) => handleClick(btnName)} />
+      </div>
+      <div>
+        <Button name="0" onClick={(btnName) => handleClick(btnName)} />
+        <Button name="." onClick={(btnName) => handleClick(btnName)} />
+        <Button name="=" onClick={(btnName) => handleClick(btnName)} />
+      </div>
+    </div>
+  );
 }
 
 export default ButtonPanel;

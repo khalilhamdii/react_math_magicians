@@ -1,4 +1,5 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unused-state */
+/* eslint-disable arrow-parens */
 import '../stylesheets/App.css';
 import React from 'react';
 import Display from './Display';
@@ -10,27 +11,28 @@ class App extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      total: null,
-      next: null,
-      operation: null,
+      total: '0',
+      next: '',
+      operation: '',
     };
   }
 
   handleClick(btnName) {
-    const { newTotal, newNext, newOperation } = calculate(btnName, this.state);
+    const data = this.state;
+    const modifiedData = calculate(data, btnName);
     this.setState({
-      total: newTotal,
-      next: newNext,
-      operation: newOperation,
+      total: modifiedData.total,
+      next: modifiedData.next,
+      operation: modifiedData.operation,
     });
   }
 
   render() {
-    const { data } = this.state;
+    const { total } = this.state;
     return (
       <>
-        <Display result={data} />
-        <ButtonPanel onClick={this.handleClick} />
+        <Display result={total} />
+        <ButtonPanel onClick={(btnName) => this.handleClick(btnName)} />
       </>
     );
   }
