@@ -34,7 +34,6 @@ const calculate = (data, btnName) => {
     operation = btnName;
   }
   modifiedData = { total, next, operation };
-  console.log(modifiedData);
   return modifiedData;
 };
 
