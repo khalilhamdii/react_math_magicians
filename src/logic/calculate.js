@@ -21,9 +21,9 @@ const calculate = (data, btnName) => {
     next = '';
   } else if (btnName === '.') {
     if (!operation && !next) {
-      total += btnName;
+      total += !/\./.test(total) ? btnName : '';
     } else if (total && operation) {
-      next += btnName;
+      next += !/\./.test(next) ? btnName : '';
     }
   } else {
     operation = btnName;
