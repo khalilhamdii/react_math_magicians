@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Big from 'big.js';
 
 function Display(props) {
   const { result } = props;
@@ -10,6 +8,6 @@ function Display(props) {
 Display.propTypes = {
   result: PropTypes.string,
 };
-Display.defaultProps = { result: 0 };
+Display.defaultProps = { result: '0' };
 
 export default Display;
