@@ -16,9 +16,6 @@ const calculate = (data, btnName) => {
     operation = '';
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
-  } else if (btnName === '%') {
-    total = operate(total, 100, '÷');
-    next = operate(next, 100, '÷');
   } else if (btnName === '=') {
     total = operate(total, next, operation);
     next = '';
