@@ -11,9 +11,9 @@ const calculate = (data, btnName) => {
       next = next === null ? btnName : next + btnName;
     }
   } else if (btnName === 'AC') {
-    total = '0';
-    next = '';
-    operation = '';
+    total = null;
+    next = null;
+    operation = null;
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
   } else if (btnName === '=') {
