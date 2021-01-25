@@ -6,9 +6,9 @@ const calculate = (data, btnName) => {
 
   if (/\d/.test(btnName)) {
     if (!operation && !next) {
-      total = total === '0' ? btnName : total + btnName;
+      total = total === null ? btnName : total + btnName;
     } else if (total && operation) {
-      next += btnName;
+      next = next === null ? btnName : next + btnName;
     }
   } else if (btnName === 'AC') {
     total = '0';

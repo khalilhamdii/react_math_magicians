@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Display(props) {
   let { result } = props;
-  result = result === '' ? 0 : result;
+  result = result === null ? 0 : result;
   return <div>{result}</div>;
 }
 Display.propTypes = {
