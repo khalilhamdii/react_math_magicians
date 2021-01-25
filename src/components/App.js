@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      total: '0',
+      total: '',
       next: '',
       operation: '',
     };

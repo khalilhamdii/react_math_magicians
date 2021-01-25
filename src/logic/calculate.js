@@ -6,7 +6,7 @@ const calculate = (data, btnName) => {
 
   if (/\d/.test(btnName)) {
     if (!operation && !next) {
-      total += btnName;
+      total = total === '0' ? btnName : total + btnName;
     } else if (total && operation) {
       next += btnName;
     }
@@ -17,7 +17,7 @@ const calculate = (data, btnName) => {
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
   } else if (btnName === '=') {
-    total = operate(total, next, operation);
+    total = next === '' ? total : operate(total, next, operation);
     next = '';
   } else if (btnName === '.') {
     if (!operation && !next) {
