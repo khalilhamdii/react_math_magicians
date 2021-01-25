@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Display(props) {
-  const { result } = props;
+  let { result } = props;
+  result = result === null ? 0 : result;
   return <div>{result}</div>;
 }
 Display.propTypes = {

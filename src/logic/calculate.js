@@ -6,24 +6,24 @@ const calculate = (data, btnName) => {
 
   if (/\d/.test(btnName)) {
     if (!operation && !next) {
-      total += btnName;
+      total = total === null ? btnName : total + btnName;
     } else if (total && operation) {
-      next += btnName;
+      next = next === null ? btnName : next + btnName;
     }
   } else if (btnName === 'AC') {
-    total = '0';
-    next = '';
-    operation = '';
+    total = null;
+    next = null;
+    operation = null;
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
   } else if (btnName === '=') {
-    total = operate(total, next, operation);
+    total = next === '' ? total : operate(total, next, operation);
     next = '';
   } else if (btnName === '.') {
     if (!operation && !next) {
-      total += btnName;
+      total += !/\./.test(total) ? btnName : '';
     } else if (total && operation) {
-      next += btnName;
+      next += !/\./.test(next) ? btnName : '';
     }
   } else {
     operation = btnName;
