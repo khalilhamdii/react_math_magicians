@@ -4,13 +4,14 @@
 
 ## Description
 
-> Math magicians is a calculator. It is built using React.js
+> Math magicians is a single page web app that was built with React.js and Bootstrap. React-Router was used to provide all of the navigation and view-loading goodness.
 
 ## Library Directory 📙
 
 | Contents                    |
 | --------------------------- |
 | [Live Demo](#live-demo)     |
+| [Screenshots](#screenshots) |
 | [Built With](#built-with-🛠) |
 | [Setup](#setup-⏳)          |
 | [Authors](#authors)         |
@@ -20,12 +21,17 @@
 
 [Live demo](https://react-math-magicians.herokuapp.com/)
 
+## Screenshots
+
+![img](./screenshots/1.PNG)
+
 ## Built With 🛠
 
 ```
 - React.js
-- ES6
 - Node.js
+- ES6
+- Bootstrap
 - HTML
 - CSS
 ```
