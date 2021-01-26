@@ -1,0 +1,37 @@
+.calc-btn {
+  height: 100px;
+  color: black;
+  font-size: 30px;
+  border-radius: 0;
+  border-style: none;
+  border-color: var(--gray);
+  box-shadow: inset 0 0 0 1px rgb(195, 195, 195);
+}
+
+.calc-btn:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.num-btn {
+  background: #e0e0e0;
+}
+
+.num-btn:active {
+  outline: 0;
+  background: #a8a8a8;
+  box-shadow: inset 1px 1px 1px 1px rgb(195, 195, 195);
+}
+
+.op-btn {
+  background: #f5913e;
+}
+
+.op-btn:active {
+  outline: 0;
+  background: #ec7a1c;
+  box-shadow: inset 1px 1px 1px 1px rgb(195, 195, 195);
+}
