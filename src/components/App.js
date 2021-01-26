@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 /* eslint-disable arrow-parens */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
@@ -11,6 +11,12 @@ const App = () => {
   const [operation, setoperation] = useState(null);
   const [log, setlog] = useState(null);
 
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const element = document.getElementById('2');
+    navLinks.forEach((item) => item.classList.remove('active'));
+    element.classList.add('active');
+  }, []);
   const handleClick = (btnName) => {
     const data = {
       total,

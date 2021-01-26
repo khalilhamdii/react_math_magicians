@@ -20,17 +20,17 @@ const Nav = () => (
     <div className="collapse navbar-collapse" id="navcol-1">
       <ul className="nav navbar-nav ml-auto font-weight-bold">
         <li className="nav-item">
-          <a className="nav-link" href="/" style={{ color: 'rgb(255,255,255)' }}>
+          <a className="nav-link" id="1" href="/">
             HOME
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/calculator" style={{ color: 'rgb(255,255,255)' }}>
+          <a className="nav-link" id="2" href="/calculator">
             CALCULATOR
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/quote" style={{ color: 'rgb(255,255,255)' }}>
+          <a className="nav-link" id="3" href="/quote">
             QUOTE
           </a>
         </li>

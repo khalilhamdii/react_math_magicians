@@ -67,13 +67,12 @@
 .navigation-clean.navbar-dark .navbar-nav a.active,
 .navigation-clean.navbar-dark .navbar-nav a.active:focus,
 .navigation-clean.navbar-dark .navbar-nav a.active:hover,
-.navigation-clean.navbar-light .navbar-nav .nav-link.active,
-.navigation-clean.navbar-light .navbar-nav .nav-link.active:focus,
-.navigation-clean.navbar-light .navbar-nav .nav-link.active:hover {
-  color: #8f8f8f;
+.navigation-clean.navbar-light .navbar-nav .nav-link.active {
+  color: #37434d;
   box-shadow: none;
   background: 0 0;
   pointer-events: none;
+  transform: scale(1.1);
 }
 
 .navigation-clean.navbar .navbar-nav .nav-link {
@@ -82,7 +81,7 @@
 }
 
 .navigation-clean.navbar-light .navbar-nav .nav-link {
-  color: #465765;
+  color: white;
 }
 
 .navigation-clean.navbar-light .navbar-nav .nav-link:focus,
