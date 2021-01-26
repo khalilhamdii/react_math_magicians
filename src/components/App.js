@@ -19,10 +19,15 @@ const App = () => {
     setoperation(modifiedData.operation);
   };
   return (
-    <>
-      <Display result={total} />
-      <ButtonPanel clickHandler={handleClick} />
-    </>
+    <div className="container d-flex flex-row justify-content-between flex-wrap">
+      <h1 className="flex-md-row" style={{ color: 'rgb(255,255,255)' }}>
+        Let&apos;s do some math!
+      </h1>
+      <div className="col-12-md" style={{ width: '700px' }}>
+        <Display result={total} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
+    </div>
   );
 };
 

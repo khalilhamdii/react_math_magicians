@@ -1,0 +1,31 @@
+.calc-btn {
+  height: 100px;
+  color: black;
+  font-size: 30px;
+  border-radius: 0;
+  border-style: none;
+  border-color: var(--gray);
+  box-shadow: inset 0px 0px 0px 1px rgb(195, 195, 195);
+}
+
+.calc-btn:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  outline: 0;
+  background: #a8a8a8;
+  transform: scale(0.97);
+}
+
+.num-btn {
+  background: #e0e0e0;
+}
+
+.op-btn {
+  background: #f5913e;
+}
