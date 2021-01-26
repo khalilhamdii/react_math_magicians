@@ -7,11 +7,7 @@ const calculate = (data, btnName) => {
   } = modifiedData;
 
   if (/\d/.test(btnName)) {
-    if (!operation && !next) {
-      total = total === null ? btnName : total + btnName;
-    } else if (total && operation) {
-      next = next === null ? btnName : next + btnName;
-    }
+    next = next === null || /[$=]/.test(log) ? btnName : next + btnName;
   } else if (btnName === 'AC') {
     total = null;
     next = null;
@@ -22,14 +18,14 @@ const calculate = (data, btnName) => {
   } else if (btnName === '=') {
     total = next === '' ? total : operate(total, next, operation);
     log += `${next} ${btnName}`;
-    next = '';
+    next = total;
   } else if (btnName === '.') {
-    if (!operation && !next) {
-      total += !/\./.test(total) ? btnName : '';
-    } else if (total && operation) {
-      next += !/\./.test(next) ? btnName : '';
-    }
+    next += !/\./.test(next) ? btnName : '';
   } else {
+    total = total !== '' && next !== '' && total !== null && next !== null && !/[$=]/.test(log)
+      ? operate(total, next, operation)
+      : total;
+    total = total || next;
     operation = btnName;
     log = log === null || /[$=]/.test(log) ? `${total} ${operation} ` : `${log} ${next} ${operation} `;
     next = '';
