@@ -16,16 +16,22 @@ button:focus {
   outline: 0;
 }
 
-button:active {
-  outline: 0;
-  background: #a8a8a8;
-  transform: scale(0.97);
-}
-
 .num-btn {
   background: #e0e0e0;
 }
 
+.num-btn:active {
+  outline: 0;
+  background: #a8a8a8;
+  box-shadow: inset 1px 1px 1px 1px rgb(195, 195, 195);
+}
+
 .op-btn {
   background: #f5913e;
+}
+
+.op-btn:active {
+  outline: 0;
+  background: #ec7a1c;
+  box-shadow: inset 1px 1px 1px 1px rgb(195, 195, 195);
 }

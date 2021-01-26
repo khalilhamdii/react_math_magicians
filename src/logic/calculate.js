@@ -2,7 +2,9 @@ import operate from './operate';
 
 const calculate = (data, btnName) => {
   let modifiedData = data;
-  let { total, next, operation } = modifiedData;
+  let {
+    total, next, operation, log,
+  } = modifiedData;
 
   if (/\d/.test(btnName)) {
     if (!operation && !next) {
@@ -14,10 +16,12 @@ const calculate = (data, btnName) => {
     total = null;
     next = null;
     operation = null;
+    log = '';
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
   } else if (btnName === '=') {
     total = next === '' ? total : operate(total, next, operation);
+    log += `${next} ${btnName} `;
     next = '';
   } else if (btnName === '.') {
     if (!operation && !next) {
@@ -27,8 +31,14 @@ const calculate = (data, btnName) => {
     }
   } else {
     operation = btnName;
+    log = log === null ? `${total} ${operation} ` : `${log} ${next} ${operation} `;
   }
-  modifiedData = { total, next, operation };
+  modifiedData = {
+    total,
+    next,
+    operation,
+    log,
+  };
   return modifiedData;
 };
 

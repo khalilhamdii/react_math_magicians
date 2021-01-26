@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 function Display(props) {
   let { result } = props;
+  let { log } = props;
   result = result === null ? 0 : result;
+  log = log === null ? '' : log;
   return (
     <div
       style={{
@@ -22,7 +24,7 @@ function Display(props) {
           paddingLeft: '10px',
         }}
       >
-        123 + 456 =
+        {log}
       </div>
       <div
         style={{
@@ -39,7 +41,8 @@ function Display(props) {
 }
 Display.propTypes = {
   result: PropTypes.string,
+  log: PropTypes.string,
 };
-Display.defaultProps = { result: '0' };
+Display.defaultProps = { result: '0', log: '' };
 
 export default Display;
