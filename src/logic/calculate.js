@@ -16,12 +16,12 @@ const calculate = (data, btnName) => {
     total = null;
     next = null;
     operation = null;
-    log = '';
+    log = null;
   } else if (btnName === '+/-') {
     total = operate(total, -1, 'x');
   } else if (btnName === '=') {
     total = next === '' ? total : operate(total, next, operation);
-    log += `${next} ${btnName} `;
+    log += `${next} ${btnName}`;
     next = '';
   } else if (btnName === '.') {
     if (!operation && !next) {
@@ -31,7 +31,8 @@ const calculate = (data, btnName) => {
     }
   } else {
     operation = btnName;
-    log = log === null ? `${total} ${operation} ` : `${log} ${next} ${operation} `;
+    log = log === null || /[$=]/.test(log) ? `${total} ${operation} ` : `${log} ${next} ${operation} `;
+    next = '';
   }
   modifiedData = {
     total,

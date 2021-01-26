@@ -24,7 +24,7 @@ const App = () => {
     setoperation(modifiedData.operation);
     setlog(modifiedData.log);
   };
-  const result = !next ? total : next;
+  const result = !next || next === '' ? total : next;
   return (
     <div className="container d-flex flex-row justify-content-between flex-wrap">
       <h1 className="flex-md-row" style={{ color: 'rgb(255,255,255)' }}>
