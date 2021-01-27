@@ -14,6 +14,7 @@
 | [Screenshots](#screenshots) |
 | [Built With](#built-with-🛠) |
 | [Setup](#setup-⏳)          |
+| [Testing](#testing-⚙️)      |
 | [Authors](#authors)         |
 | [License](#license)         |
 
@@ -46,6 +47,15 @@
 4. - [ ] Run `cd react_math_magicians` to enter directory.
 5. - [ ] Run `npm install` to install node packages and dependencies.
 6. - [ ] Run `npm start` in your browser to start the application.
+
+## Testing ⚙️
+
+> I used [Jest](https://jestjs.io/) testing tool and react testing library to test functions by creating several test cases and snapshots. Please follow below steps to run Jest testing tool:
+
+1. - [ ] Open `Terminal` again
+2. - [ ] Run `cd react_math_magicians` to enter directory
+3. - [ ] Run `npm test` to start testing
+4. - [ ] All tests will pass ✅
 
 ## Authors
 
