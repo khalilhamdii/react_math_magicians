@@ -14,11 +14,15 @@ const calculate = (data, btnName) => {
     operation = null;
     log = null;
   } else if (btnName === '+/-') {
-    total = operate(total, -1, 'x');
+    next = operate(next, -1, 'x');
   } else if (btnName === '=') {
-    total = next === '' ? total : operate(total, next, operation);
-    log += `${next} ${btnName}`;
-    next = total;
+    if (operation === '%') {
+      next = operate(total, next, operation);
+    } else {
+      total = next === '' ? total : operate(total, next, operation);
+      log += `${next} ${btnName}`;
+      next = total;
+    }
   } else if (btnName === '.') {
     next += !/\./.test(next) ? btnName : '';
   } else {
@@ -27,7 +31,9 @@ const calculate = (data, btnName) => {
       : total;
     total = total || next;
     operation = btnName;
-    log = log === null || /[$=]/.test(log) ? `${total} ${operation} ` : `${log} ${next} ${operation} `;
+    log = log === null || /[$=]|[%]/.test(log)
+      ? `${total} ${operation} `
+      : `${log} ${next} ${operation} `;
     next = '';
   }
   modifiedData = {
