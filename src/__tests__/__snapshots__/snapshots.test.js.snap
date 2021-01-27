@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots renders App correctly 1`] = `
+<div
+  className="container d-flex flex-row justify-content-between flex-wrap"
+>
+  <h1
+    className="flex-md-row"
+    style={
+      Object {
+        "color": "rgb(255,255,255)",
+      }
+    }
+  >
+    Let's do some math!
+  </h1>
+  <div
+    className="col-12-md"
+    style={
+      Object {
+        "width": "700px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "#858694",
+          "color": "white",
+          "height": "150px",
+          "textAlign": "right",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "fontSize": "25px",
+            "height": "50px",
+            "padding": "5px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+          }
+        }
+      >
+        
+      </div>
+      <div
+        style={
+          Object {
+            "borderStyle": "none",
+            "fontSize": "45px",
+            "height": "100px",
+            "padding": "10px",
+          }
+        }
+      >
+        0
+      </div>
+    </div>
+    <div>
+      <div>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="calc-btn w-25 op-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="calc-btn w-25 op-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
+      <div>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="calc-btn w-25 op-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="calc-btn w-25 op-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <button
+          className="calc-btn w-50 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="calc-btn w-25 num-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="calc-btn w-25 op-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshots renders Display correctly 1`] = `
+<div
+  style={
+    Object {
+      "background": "#858694",
+      "color": "white",
+      "height": "150px",
+      "textAlign": "right",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "fontSize": "25px",
+        "height": "50px",
+        "padding": "5px",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+      }
+    }
+  >
+    
+  </div>
+  <div
+    style={
+      Object {
+        "borderStyle": "none",
+        "fontSize": "45px",
+        "height": "100px",
+        "padding": "10px",
+      }
+    }
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Snapshots renders Footer correctly 1`] = `
+<div
+  className="footer-basic mt-5"
+  style={
+    Object {
+      "background": "#F5913E",
+    }
+  }
+>
+  <footer>
+    <ul
+      className="list-inline"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="/quote"
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+    <p
+      className="copyright"
+      style={
+        Object {
+          "color": "var(--dark)",
+          "fontSize": "16px",
+        }
+      }
+    >
+      Math Magicians by Khalil Hamdi © 2021
+    </p>
+  </footer>
+</div>
+`;
+
+exports[`Snapshots renders Home correctly 1`] = `
+<div
+  className="container"
+>
+  <h1
+    style={
+      Object {
+        "color": "rgb(255,255,255)",
+      }
+    }
+  >
+    Welcome to our page!
+  </h1>
+  <p
+    style={
+      Object {
+        "color": "white",
+        "fontSize": "25px",
+      }
+    }
+  >
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui o!cia deserunt mollit anim id est laborum.
+  </p>
+  <br />
+  <p
+    style={
+      Object {
+        "color": "white",
+        "fontSize": "25px",
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum.
+  </p>
+  <br />
+</div>
+`;
+
+exports[`Snapshots renders Nav correctly 1`] = `
+<nav
+  className="navbar navbar-light navbar-expand-md navigation-clean mb-5"
+  style={
+    Object {
+      "background": "#F5913E",
+    }
+  }
+>
+  <a
+    className="navbar-brand"
+    href="/"
+    style={
+      Object {
+        "fontFamily": "Aclonica, sans-serif",
+        "fontSize": "30px",
+      }
+    }
+  >
+    Math Magicians
+  </a>
+  <button
+    className="navbar-toggler"
+    data-target="#navcol-1"
+    data-toggle="collapse"
+    type="button"
+  >
+    <span
+      className="sr-only"
+    >
+      Toggle navigation
+    </span>
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    className="collapse navbar-collapse"
+    id="navcol-1"
+  >
+    <ul
+      className="nav navbar-nav ml-auto font-weight-bold"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/"
+          id="1"
+        >
+          HOME
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/calculator"
+          id="2"
+        >
+          CALCULATOR
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/quote"
+          id="3"
+        >
+          QUOTE
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`Snapshots renders Quote correctly 1`] = `
+<div
+  className="container"
+>
+  <h1
+    style={
+      Object {
+        "color": "rgb(255,255,255)",
+      }
+    }
+  >
+    Quote of the day
+  </h1>
+  <p
+    style={
+      Object {
+        "color": "white",
+        "fontFamily": "Quattrocento Sans, sans-serif",
+        "fontSize": "48px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <br />
+    <br />
+    "Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." – William Paul Thurston
+    <br />
+    <br />
+    <br />
+  </p>
+</div>
+`;
